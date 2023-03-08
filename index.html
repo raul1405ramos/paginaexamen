@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca Cola</title>
+    <div id="player"></div>
+  <script src="index.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+<!--libreria css boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--iconos bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">    
+
+<!--estilos CSS propios-->
+    <link rel="stylesheet" href="style.css">
+
+
+    
+</head>
+<body>
+  
+
+      <div id="player" class="videoyoutube"></div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    
+    <script>
+      
+        // Carga la API de YouTube
+        
+function init() {
+    gapi.client.setApiKey(process.env.AIzaSyAlt2PcXHYBldAaRe6LUGDH7wA8VgUPOEM);
+    gapi.client.load('youtube', 'v3', function() {
+      
+      // Llamada a la función para insertar el video
+      insertVideo();
+    });
+  }
+  
+  // Configura la API key y llama a la función para insertar el video
+  var player;
+  
+  gapi.load('client', init);
+        function onYouTubeIframeAPIReady() {
+          
+            var videoId = 'j65L6eB34m0'; // Reemplaza con el ID del video que quieres insertar
+             player = new YT.Player('player', {
+                height: '215',
+                width: '300',
+                videoId: videoId,
+                
+            });
+        }
+
+        function playVideo(){
+        player.playVideo();
+
+        }
+        
+        
+  
+    </script>
+
+
+
+
+    <section>
+        <div class="circulo"></div>
+        
+        <nav class="navbar navbar-expand-md navbar-expand-xl navbar-dark mt-4">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="logo cocacola.png" alt="logo coca cola">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Producto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+      
+
+      <div class="container">  
+        <div class="row">
+            <div class="main col-md-6 col-12 d-flex flex-column justify-content-center">             
+            <h1 class="text-white mb-3">Hagamos Esto Juntos</h1>
+<p class="text-white mb-3" id="texto">
+Destapa la felicidad con una Coca-Cola bien fría!!
+</p>
+<button class="btn btn-coca-cola col-3 col-md-3 btn-sm" id="boton">
+
+
+Conoce más
+</button>
+</div>
+<div class="col-md-6 col-lg-16">
+<!--Swipper-->
+<div class="swiper mySwiper">
+<div class="swiper-wraper">
+   <div class="swiper-slide1">
+      <img src="cocacola1.png">
+</div>
+
+<div class="swiper-slide2">
+  <img src="cocacola2.png">
+</div>
+
+<div class="swiper-slide3">
+  <img src="cocacola3-removebg-preview.png" width="100" height="450">
+</div>
+
+<div class="swiper-slide5">
+  <img src="cocacola5-removebg-preview.png" width="180" height="250">
+</div>
+
+
+
+</div>
+
+<div class="swiper-pagination"></div>
+
+
+
+</div>
+
+
+
+</div>
+
+        </div>
+        </div>
+
+       <div class="container">
+<div class="row">
+<div class="col-12 mb-4">
+<div class="nav">
+<ul class="nav redes">
+    <li class="nav-item me-2">
+      <a class="nav-link active" aria-current="page" href="#">
+        <i class="bi bi-facebook"></i>
+      </a>
+    </li>
+    <li class="nav-item me-2">
+        <a class="nav-link active" aria-current="page" href="#">
+          <i class="bi bi-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </li>
+      <section class="">
+      </div>
+    </div>
+  </div>
+</div>
+
+        <!-- Footer -->
+        <br><br>
+        <div class="footer-container" width="30px">         
+        <footer class="text-center text-white" style="background-color: black;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0"></div>
+            <!-- Section: CTA -->
+            <section>
+              <p class="d-flex justify-content-center align-items-center"style="background-color: white" >
+                <a class="text-black">
+                <span class="me-7" style="color: black;">Registrate aquí</span>
+                <button type="button" class="btn btn-outline-light btn-rounded" style="color: black;" style="background-color: white;">
+                  Únete
+                </button>
+              </a>
+              </p>
+            </section>
+            
+            <!-- Section: CTA -->
+         
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="containerfinal">
+          <div class="text-center p-3">
+            © 2023 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">CocaCola.com</a>
+          </div>
+        </div>
+          <!-- Copyright -->
+        </footer>
+        </div>
+        <!-- Footer -->
+    
+      
+    
+</div>
+</div>
+
+
+    
+  </ul>
+</div>
+</div>
+       </div>
+       </div> 
+   </section>
+    <!--libreria js boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--libreria js swipper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--Initialize Swiper-->
+    
+
+
+</body>
+
+</html>
